@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/components/Information.css';
 
 export const Information = () => {
@@ -10,24 +11,22 @@ export const Information = () => {
         </div>
         <div className="Information-form">
           <form action="">
-            <input type="text" placeholder='Complete name' name='name' />
-            <input type="text" placeholder='Email' name='email' />
-            <input type="text" placeholder='Address' name='address' />
-            <input type="text" placeholder='Apto' name='apto' />
-            <input type="text" placeholder='City' name='city' />
-            <input type="text" placeholder='Country' name='country' />
-            <input type="text" placeholder='State' name='state' />
-            <input type="text" placeholder='Postal code' name='postal' />
-            <input type="text" placeholder='Phone number' name='phoneNumber' />
+            <input type="text" placeholder="Complete name" name="name" />
+            <input type="text" placeholder="Email" name="email" />
+            <input type="text" placeholder="Address" name="address" />
+            <input type="text" placeholder="Apto" name="apto" />
+            <input type="text" placeholder="City" name="city" />
+            <input type="text" placeholder="Country" name="country" />
+            <input type="text" placeholder="State" name="state" />
+            <input type="text" placeholder="Postal code" name="postal" />
+            <input type="text" placeholder="Phone number" name="phoneNumber" />
           </form>
         </div>
         <div className="Information-buttons">
-          <div className="Information-back">
-            Go back
-          </div>
-          <div className="Information-next">
-            Buy
-          </div>
+          <div className="Information-back">Go back</div>
+          <Link to="/checkout/payment">
+            <div className="Information-next">Buy</div>
+          </Link>
         </div>
       </section>
       <div className="Information-sidebar">
