@@ -1,7 +1,7 @@
 {
-    "react/function-component-definition": [{
-        "namedComponents": "arrow-function"
-    }],
+    // "react/function-component-definition": [{
+    //     "namedComponents": "arrow-function"
+    // }],
     "extends": [
         "airbnb",
         "prettier"
