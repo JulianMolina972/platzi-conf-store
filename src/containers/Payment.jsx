@@ -49,8 +49,7 @@ export const Payment = () => {
         <div className="Payment-button">
           <PayPalScriptProvider
             options={{
-              'client-id':
-                'AV0l5rTOv1T3tHQFA9WL7UP1GLyBGyGXh8SCTEln3Q8asyZf-CviXkZw1HyA0R-OEmzwj7UoW2sTrD9R',
+              'client-id': process.env.REACT_APP_PAYPAL_ID,
               currency: 'USD',
             }}
           >
