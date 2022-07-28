@@ -1,5 +1,5 @@
 import React from 'react';
-import initialState from '../../initialState.js';
+import initialState from '../initialState.js';
 import { Products } from '../components/Products';
 
 export const Home = () => {
