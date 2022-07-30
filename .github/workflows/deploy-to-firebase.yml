@@ -11,6 +11,9 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+        env: 
+          POSITION_STACK_API_KEY: ${{ secrets.POSITION_STACK_API_KEY }}
+          REACT_APP_PAYPAL_ID: ${{ secrets.REACT_APP_PAYPAL_ID }}
       - name: Archive Production Artifact
         uses: actions/upload-artifact@main
         with:
@@ -29,7 +32,7 @@ jobs:
           name: dist
           path: dist
       - name: Deploy to Firebase
-        uses: w9jds/firebase-action@main
+        uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
         env:
