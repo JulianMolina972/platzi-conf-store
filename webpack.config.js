@@ -55,13 +55,11 @@ module.exports = {
     }),
     new Dotenv({
 			path: './.env',
-			safe: true,
-			systemvars: true,
-			defaults: false,
+			
 		}),
     new webpack.DefinePlugin({
-      'process.env.PAYPAL_CLIENT_PP': JSON.stringify(process.env.PAYPAL_CLIENT_PP),
-      'process.env.GOOGLE_MAPS_API_KEY': JSON.stringify(process.env.GOOGLE_MAPS_API_KEY),
+      'POSITION_STACK_API_KEY': JSON.stringify(process.env.POSITION_STACK_API_KEY),
+      'REACT_APP_PAYPAL_ID': JSON.stringify(process.env.REACT_APP_PAYPAL_ID),
     }),
   ],
   devServer: {
