@@ -58,8 +58,8 @@ module.exports = {
 			
 		}),
     new webpack.DefinePlugin({
-      'POSITION_STACK_API_KEY': JSON.stringify(process.env.POSITION_STACK_API_KEY),
-      'REACT_APP_PAYPAL_ID': JSON.stringify(process.env.REACT_APP_PAYPAL_ID),
+      'process.env.POSITION_STACK_API_KEY': JSON.stringify(process.env.POSITION_STACK_API_KEY),
+      'process.env.REACT_APP_PAYPAL_ID': JSON.stringify(process.env.REACT_APP_PAYPAL_ID),
     }),
   ],
   devServer: {
