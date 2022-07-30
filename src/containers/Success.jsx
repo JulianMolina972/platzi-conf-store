@@ -6,7 +6,7 @@ import '../styles/components/Success.css';
 
 export const Success = () => {
   const { state: buyer } = useContext(AppContext);
-
+  console.log(buyer.buyer);
   const location = usePositionStackAddress(buyer.buyer[0].address);
 
   return (

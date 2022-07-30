@@ -10,6 +10,7 @@ import { Layout } from '../components/Layout';
 import { AppProvider } from '../context/AppContext';
 
 const App = () => {
+
   return (
     <AppProvider>
       <BrowserRouter>
@@ -29,6 +30,7 @@ const App = () => {
         </Layout>
       </BrowserRouter>
     </AppProvider>
+
   );
 };
 
