@@ -15,7 +15,7 @@ jobs:
           POSITION_STACK_API_KEY: ${{ secrets.POSITION_STACK_API_KEY }}
           REACT_APP_PAYPAL_ID: ${{ secrets.REACT_APP_PAYPAL_ID }}
       - name: Archive Production Artifact
-        uses: actions/upload-artifact@main
+        uses: actions/upload-artifact@master
         with:
           name: dist
           path: dist
@@ -27,7 +27,7 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@main
       - name: Download Artifact
-        uses: actions/download-artifact@main
+        uses: actions/download-artifact@master
         with:
           name: dist
           path: dist
@@ -37,5 +37,6 @@ jobs:
           args: deploy --only hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          
 
           

@@ -3,7 +3,8 @@ import axios from 'axios';
 
 export const usePositionStackAddress = (address) => {
   const params = {
-    access_key: process.env.POSITION_STACK_API_KEY,
+    // access_key: process.env.POSITION_STACK_API_KEY,
+    access_key: secrets.REACT_APP_PAYPAL_ID,
     query: address,
   };
 
